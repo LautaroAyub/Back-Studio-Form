@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-// import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Form=()=>{
     const [formData, setFormData] = useState({
@@ -8,7 +8,6 @@ const Form=()=>{
         from_email: '',
         from_message: ''
       });
-    //   const [captchaValue, setCaptchaValue] = useState(null);
       const [formStatus, setFormStatus] = useState('');
     
       const handleChange = (e) => {
@@ -19,21 +18,12 @@ const Form=()=>{
         });
       };
     
-    //   const handleCaptchaChange = (value) => {
-    //     setCaptchaValue(true);
-    //   };
     
       const handleSubmit = (e) => {
         e.preventDefault();
-    
-        // if (!captchaValue) {
-        //   setFormStatus('Please complete the CAPTCHA.');
-        //   return;
-        // }
         const serviceID = 'default_service';
         const templateID = 'template_za47z84';
         const userID = import.meta.env.VITE_API_KEY;
-        console.log(userID)
         emailjs.sendForm(serviceID, templateID, e.target, userID)
           .then((result) => {
               setFormStatus('Message sent successfully!');
@@ -48,7 +38,6 @@ const Form=()=>{
           email: '',
           message: ''
         });
-        // setCaptchaValue(null);
       };
 
 
@@ -95,8 +84,3 @@ const Form=()=>{
     )
 }
 export default Form
-
-{/* <ReCAPTCHA
-sitekey="YOUR_RECAPTCHA_SITE_KEY"
-onChange={handleCaptchaChange}
-/> */}
