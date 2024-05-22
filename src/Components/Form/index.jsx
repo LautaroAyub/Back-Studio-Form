@@ -32,7 +32,8 @@ const Form=()=>{
         // }
         const serviceID = 'default_service';
         const templateID = 'template_za47z84';
-        const userID = "zI61JzSxXpf2W7Y4u"
+        const userID = import.meta.env.VITE_API_KEY;
+        console.log(userID)
         emailjs.sendForm(serviceID, templateID, e.target, userID)
           .then((result) => {
               setFormStatus('Message sent successfully!');
