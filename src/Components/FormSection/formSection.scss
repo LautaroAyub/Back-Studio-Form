@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+.form-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 1200px;
+    background-color: $yellow-color;
+    
+        h1{
+            text-align: center;
+            margin: 50px 0;
+            font-size:$large-font-size;
+        }
+       .contact-info-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 45px 0;
+            a{
+                text-decoration: none;
+                font-size: $medium-font-size;
+                font-weight: $light-font-weight;
+                color:$black-color;
+            }
+        .form-icon{
+            height: 40px;
+            width: 40px;
+        }
+       }
+
+}

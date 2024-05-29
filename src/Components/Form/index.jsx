@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-
+import "./form.scss"
 
 const Form=()=>{
     const [formData, setFormData] = useState({
@@ -17,8 +17,6 @@ const Form=()=>{
           [name]: value
         });
       };
-    
-    
       const handleSubmit = (e) => {
         e.preventDefault();
         const serviceID = 'default_service';
@@ -43,8 +41,9 @@ const Form=()=>{
 
     return(
         
-<form onSubmit={handleSubmit}>
-  <div >
+<form onSubmit={handleSubmit}
+className='form-container'>
+  <div className='form-options' >
     <label htmlFor="from_name">Name</label>
     <input 
     type="text" 
@@ -56,7 +55,7 @@ const Form=()=>{
     />
   </div>
 
-  <div >
+  <div className='form-options'>
     <label htmlFor="from_email">Email</label>
     <input     
     type="text" 
@@ -66,9 +65,9 @@ const Form=()=>{
     onChange={handleChange}
     required/>
   </div>
-  <div >
+  <div className='form-options'>
     <label htmlFor="message">Message</label>
-    <input
+    <textarea
        type="text" 
        id="from_message"
        name="from_message"
@@ -77,7 +76,7 @@ const Form=()=>{
        required/>
   </div>
 
-  <button type="submit">Submit</button>
+  <button type="submit">Enviar</button>
       {formStatus && <p>{formStatus}</p>}
  
 </form>

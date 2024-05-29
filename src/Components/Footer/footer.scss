@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: $black-color;
+    color:$white-color;
+    span{
+        font-size: $medium-font-size;
+        font-weight: $light-font-weight;
+    }
+}
