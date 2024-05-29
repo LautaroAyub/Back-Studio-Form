@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/STATUS-EN_DESARROLLO-green">
   <p/>
 ¡Hola!<br>
-Este es un trabajo que hice para la marca Back Studio en el que desarrolle una web informativa <br> con un formulario de contacto que usando el servidor de Mail JS envia automaticamente la informacion a mi cliente.
+Este es un trabajo que hice para la marca Back Studio en el que desarrolle una web informativa <br> con un formulario de contacto que usando el servidor de Email JS envia automaticamente la informacion a mi cliente.
     
 ## 🌏 *Github Page*
 Puedes ver el proyecto en acción <a href="https://backstudio.netlify.app" target="_blank">aquí</a>.
