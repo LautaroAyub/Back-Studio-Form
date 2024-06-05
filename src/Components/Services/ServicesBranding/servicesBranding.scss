@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+.branding-container {
+    @include content-center;
+    justify-content: start;
+    position: relative;
+    min-height: 600px;
+    max-height: 900px;
+    margin: 0;
+    color: $black-color;
+
+    .branding-background {
+        @include background-img;
+        background-image: url("../../../assets/brandingxl.jpg");
+    }
+    h1 {
+        @include font-xxl;
+        margin: 20px 0 5px 0;
+        font-weight: $bold-font-weight;
+    }
+
+    .branding-items-container {
+        @include content-center;
+        margin-bottom: 30px;
+        width: 80%;
+        .branding-items {
+            @include font-medium;
+            margin-top: 14px;
+            font-weight:$regular-font-weight;
+
+        }
+    }
+}

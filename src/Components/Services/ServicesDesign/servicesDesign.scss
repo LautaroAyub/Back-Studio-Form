@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+.design-container {
+    @include content-center;
+    justify-content: start;
+    position: relative;
+    min-height: 600px;
+    max-height: 900px;
+    margin: 0;
+    color: $white-color;
+
+    .design-background {
+        @include background-img;
+        background-image: url("../../../assets/designxl.jpg");
+    }
+    h1{
+        margin: 30px 0 5px 0;
+        @include font-xxl;
+        font-weight: $bold-font-weight;
+    }
+
+    .design-items-container{
+        width: 80%;
+        margin-bottom: 30px;
+        .design-items{
+            margin-top: 14px;
+            @include font-medium;
+            font-weight: $regular-font-weight;
+        }
+    }
+
+}

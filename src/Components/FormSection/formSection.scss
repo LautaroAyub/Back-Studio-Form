@@ -1,26 +1,26 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 .form-section-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 1200px;
+    @include content-center;
+    @include layout;
+    max-height: 1200px;
     background-color: $yellow-color;
-    
         h1{
-            text-align: center;
+            @include font-large;
             margin: 50px 0;
-            font-size:$large-font-size;
+        }
+        .contact-info{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
+            grid-template-rows: repeat(2, minmax(150px, 1fr));
+           gap: 6px;
         }
        .contact-info-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include content-center;
         margin: 45px 0;
             a{
+                @include font-medium;
                 text-decoration: none;
-                font-size: $medium-font-size;
                 font-weight: $light-font-weight;
                 color:$black-color;
             }
@@ -29,5 +29,6 @@
             width: 40px;
         }
        }
-
 }
+
+

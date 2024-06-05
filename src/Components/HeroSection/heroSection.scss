@@ -1,15 +1,13 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 .hero-container {
+    @include content-center;
+    @include layout;
     background-color: $orange-color;
     position: relative;
     width: 100%;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    text-align: start;
     .hero-logo-1 {
         width: 115px;
         height: 119px;
@@ -35,25 +33,30 @@
     }
 
     h1 {
-        font-size: $xl-large-font-size;
+        @include font-xl;
+        text-align: start;
         line-height: 1.3;
         color: $white-color;
     }
-
-    a {
-        text-decoration: none;
 
         .hero-button {
             border: 2px #FFF solid;
             border-radius: 20px;
             padding: 10px 40px;
             margin-top: 25px;
+            cursor: pointer;
 
             span {
+                @include font-medium;
                 color: $white-color;
-                font-size: $medium-font-size;
             }
 
         }
-    }
+        .hero-button:hover{
+            background-color:$white-color;
+            span {
+                color: $orange-color;
+            }
+        }
+
 }

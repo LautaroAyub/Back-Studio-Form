@@ -1,13 +1,13 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 
 .introduction-section {
+    @include content-center;
+    @include layout;
+    justify-content: start;
     position: relative;
     background-color: $soft-white-color;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    max-height: 650px;
 
     .logo1 {
         position: absolute;
@@ -28,17 +28,17 @@
     }
 
     .introduction-title {
-        text-align: center;
-        margin-top: 100px;
+        @include font-medium;
+        margin: 90px 0 10px 0;
         font-weight: $regular-font-weight;
     }
 
     .introduction-content {
         display: flex;
         flex-direction: column;
-        margin: 0 20px;
+        margin-bottom: 20px;
 
-        .item-container {
+        .items-container {
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -46,18 +46,16 @@
         }
 
         .number {
-            font-size: 3.2rem;
-            color: $black-color;
+            @include font-xxl;
+             color: $black-color;
         }
 
-        .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+        .items {
             margin-left: 20px;
 
             p {
+                @include font-small;
+                text-align: start;
                 font-weight: $light-font-weight;
             }
         }

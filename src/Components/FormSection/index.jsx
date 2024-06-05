@@ -7,7 +7,7 @@ import { ReactComponent as InstagramIcon } from "../../assets/instagram.svg"
 
 const FormSection = () => {
     return (
-        <section className="form-section-container">
+        <section id="form-section" className="form-section-container">
 
             <h1 >Pssssst, estás MUY cerca de empezar :)</h1>
             <Form />

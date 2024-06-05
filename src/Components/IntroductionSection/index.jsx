@@ -9,44 +9,44 @@ const IntroductionSection = () => {
             </h2>
             <div className="introduction-content">
 
-                <div className="item-container" >
+                <div className="items-container" >
                     <h3 className="number">01</h3>
-                    <span className="item">
+                    <span className="items">
                         <p>Estás empezando a crear tu marca<br />y no estás seguro por dónde empezar.
                         </p>
                     </span>
 
                 </div>
-                <div className="item-container" >
+                <div className="items-container" >
                     <h3 className="number">02</h3>
-                    <span className="item">
+                    <span className="items">
                         <p>Te abruma pensar en el tiempo que<br />
                             te lleva ocuparte de todo y necesitas delegar.
                         </p>
                     </span>
 
                 </div>
-                <div className="item-container" >
+                <div className="items-container" >
                     <h3 className="number">03</h3>
-                    <span className="item">
+                    <span className="items">
                         <p>Sabes la importancia de contar con
                             <br />
                             presencia online pero no sabés cómo gestionarla a tu favor.
                         </p>
                     </span>
                 </div>
-                <div className="item-container" >
+                <div className="items-container" >
                     <h3 className="number">04</h3>
-                    <span className="item">
+                    <span className="items">
                         <p>No sabes cómo hacer para
                             <br />
                             diferenciarte de tu competencia.
                         </p>
                     </span>
                 </div>
-                <div className="item-container" >
+                <div className="items-container" >
                     <h3 className="number">05</h3>
-                    <span className="item">
+                    <span className="items">
                         <p>Querés darle un impulso a tu
                             <br />
                             imagen de marca.
